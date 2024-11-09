@@ -1,38 +1,86 @@
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    font-family: 'Titillium Web', sans-serif;
+    background-color: #171717;
+    color: #FFFFFF;
+    min-height: 100vh;
+    overflow-x: hidden;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  .app-header {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 10px 20px;
+    background-color: #000;
+    position: relative;
+    width: 100%; 
   }
-  to {
-    transform: rotate(360deg);
+  
+
+  .left-side {
+    display: flex;
+    align-items: center;
+    flex-grow: 1; 
   }
-}
+  
+  .left-side i {
+    font-size: 1.5rem; 
+    cursor: pointer; 
+    margin-right: 10px; 
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin: 0;
+    text-align: left;
+    color: white;
+  }
+  
+  
+  .right-side {
+    display: flex;
+    align-items: center;
+    margin-left: auto; 
+  }
+  
+  .search-button {
+    background: none;
+    margin: 15px;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px; 
+  }
+  
+  .search-button i {
+    font-size: 1.5rem; 
+    color: white;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Titillium Web', sans-serif;
+    background-color: #171717;
+    color: #FFFFFF;
+  }
+
+  
+  @media (max-width: 768px) {
+    .icon-large {
+      font-size: 1rem; 
+    }
+  
+    h2 {
+      font-size: 20px; 
+    }
+  
+    .right-side {
+      margin-left: auto; 
+    }
+  }
+  

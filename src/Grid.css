@@ -1,0 +1,26 @@
+.content-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 20px;
+    background-color: black;
+  }
+  
+  .grid-item {
+    text-align: center;
+  }
+ 
+  
+  .grid-image {
+    width: 100%;
+    aspect-ratio: 2 / 3;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+  
+  .grid-item p {
+    margin-top: 0px;
+    margin-bottom: 20px;
+    font-size: 15px;
+    text-align: left;
+  }

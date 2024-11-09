@@ -1,23 +1,25 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
+import Grid from './Grid';
 import './App.css';
+import 'bootstrap-icons/font/bootstrap-icons.css';
 
 function App() {
+  const [searchQuery, setSearchQuery] = useState('');
+  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <header className="app-header">
+        <div className="left-side">
+          <i className="bi bi-arrow-left icon-large"></i>
+          <h2>Romantic Comedy</h2>
+        </div>
+        <div className="right-side">
+          <button className="search-button">
+            <i className="bi bi-search icon-large" />
+          </button>
+        </div>
       </header>
+      <Grid searchQuery={searchQuery} />
     </div>
   );
 }
